@@ -4,18 +4,22 @@
     <head>
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
-        <link href='css/markers.css' rel='stylesheet' />
-        <link href='css/nav.css' rel='stylesheet' />
-        <link href='css/map.css' rel='stylesheet' />
+        <link href='css/style.css' rel='stylesheet' />
         <script src='script/scripts.js'></script>
     
     </head>
     <body>
         
         <div id='sidenav' class = 'sidenav'>
-            <a id='openclose' href="javascript:void(0)" class="openclosebtn" onclick="openNav()">&gt;</a>
-            <a id = 'addHouse' href='javascript:void(0)' onclick='addHouseMarker()'>Add House</p>
+            <div>
+                <a id='openclose' href="javascript:void(0)" class="openclosebtn" onclick="openNav()">&gt;</a>
+            </div>
+            <div>
+                <img class = "icon" onclick='addHouseMarker()' src="img/house.png">
+                <a id = 'addHouse' href='javascript:void(0)' onclick='addHouseMarker()'>Add New Housing</a>
+            </div>
         </div>
         <div id='map' class='map'></div>
         <script src = 'script/map.js'></script>

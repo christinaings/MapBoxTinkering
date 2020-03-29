@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     background-color: #a6c6ff;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
@@ -14,23 +14,30 @@
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 50%;
+    color: #000000;
     display: block;
     transition: 0.3s;
     visibility: hidden;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #818181;
+}
+
+.sidenav .div a{
+    transition: visibility 0s linear 300ms;
+    max-height: 20px;
+    overflow: hidden;
 }
 
 .sidenav .openclosebtn {
     position: absolute;
     top: 0;
-    right: 12.5px;
+    right: 7px;
     font-size: 36px;
-    margin-left: 50px;
     visibility: visible;
 }
 
@@ -43,4 +50,10 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+}
+
+.icon{
+    right: 10px;
+    position: absolute;
+    height: 30px;
+}
