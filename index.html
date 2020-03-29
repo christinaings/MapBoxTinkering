@@ -13,10 +13,11 @@
     </head>
     <body>
         
-        <div class = 'sidenav'>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <p class = 'clickable' onclick='addHouseMarker()'>Add House</p>
+        <div id='sidenav' class = 'sidenav'>
+            <a id='openclose' href="javascript:void(0)" class="openclosebtn" onclick="openNav()">&gt;</a>
+            <a id = 'addHouse' href='javascript:void(0)' onclick='addHouseMarker()'>Add House</p>
         </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         <div id='map' class='map'></div>
         <script src = 'script/map.js'></script>
     </body>
